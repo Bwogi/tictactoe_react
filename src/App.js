@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Tictactoe from './components/Tictactoe';
+import Square from './components/Square';
+import Circle from './components/Circle';
+import Cross from './components/Cross';
+import Result from './components/Result';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="app">
+    <Tictactoe />
+    <Square />
+    <Circle />
+    <Cross />
+    <Result />
+
+
     </div>
   );
 }
+
 
 export default App;
