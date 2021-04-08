@@ -1,13 +1,10 @@
 import React from 'react'
 
 function Square() {
-    return ( <
-        div >
+    return ( 
+        <div className="square">
         <p>square</p>
-
-
-        <
-        /div>
+        </div>
     )
 }
 

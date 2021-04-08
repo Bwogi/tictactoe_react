@@ -3,8 +3,7 @@ import Square from './Square'
 
 function Tictactoe() {
     return (
-        <div>
-            <h1>Tic Tac Toe: Welcome guys</h1>
+        <div className="grid">
             <Square />
             <Square />
             <Square />

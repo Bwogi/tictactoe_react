@@ -9,11 +9,9 @@ import Result from './components/Result';
 function App() {
   return (
     <div id="app">
-    <Tictactoe />
-    {/* <Square />
-    <Circle />
-    <Cross />
-    <Result /> */}
+
+        <Tictactoe />
+   
 
 
     </div>
