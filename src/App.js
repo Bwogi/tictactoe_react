@@ -10,10 +10,10 @@ function App() {
   return (
     <div id="app">
     <Tictactoe />
-    <Square />
+    {/* <Square />
     <Circle />
     <Cross />
-    <Result />
+    <Result /> */}
 
 
     </div>
