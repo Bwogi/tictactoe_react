@@ -17,6 +17,7 @@ body {
     grid-template-rows: auto auto auto;
     column-gap: 10px;
     row-gap: 10px;
+    background-color: lightgrey;
 }
 
 .square {
@@ -25,4 +26,5 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }

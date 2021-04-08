@@ -1,11 +1,12 @@
 import React from 'react'
+import Circle from './Circle';
 
-function Square() {
+function Square({position, value}) {
     return ( 
         <div className="square">
-        <p>square</p>
-        </div>
-    )
+            {value == CIRCLE && <Circle />}
+            </div>
+    );
 }
 
 export default Square
