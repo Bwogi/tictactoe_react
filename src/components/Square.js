@@ -4,7 +4,7 @@ import Circle from './Circle';
 function Square({position, value}) {
     return ( 
         <div className="square">
-            {value == CIRCLE && <Circle />}
+            {value == 'CIRCLE' && <Circle />}
             </div>
     );
 }

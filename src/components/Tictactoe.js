@@ -9,8 +9,9 @@ function Tictactoe() {
     const player = 'CIRCLE';
     const positions = [ 
         EMPTY,EMPTY,CIRCLE,
-        EMPTY,EMPTY,EMPTY,
-        EMPTY,CIRCLE,EMPTY];
+        EMPTY,CROSS,EMPTY,
+        EMPTY,CIRCLE,EMPTY
+    ];
 
     return (
         <div className="grid">
