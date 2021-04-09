@@ -1,4 +1,5 @@
 import React from 'react'
+import Result from './Result';
 import Square from './Square'
 
 const EMPTY = 'EMPTY';
@@ -12,8 +13,8 @@ function Tictactoe() {
             EMPTY,EMPTY,EMPTY,
             EMPTY,EMPTY,EMPTY,
             EMPTY,EMPTY,EMPTY
-        ],
-        winner: EMPTY
+        ]
+        // winner: EMPTY
     })
     
     function takeTurn(position){
@@ -22,8 +23,8 @@ function Tictactoe() {
 
         setState({
             player: state.player == CIRCLE ? CROSS : CIRCLE,
-            positions,
-            winner: detectWinner(positions)
+            positions
+            // winner: detectWinner(positions)
         });
     }
 
@@ -57,20 +58,24 @@ function Tictactoe() {
         if(p.every(position => position != EMPTY)) return "It is a tie!";
     }   
 
+    const winner = detectWinner(state.positions);
+
     return (
-        <div className="grid">
-            <Square position={0} value={state.positions[0]} takeTurn={takeTurn}/>
-            <Square position={1} value={state.positions[1]} takeTurn={takeTurn} />
-            <Square position={2} value={state.positions[2]} takeTurn={takeTurn} />
-            <Square position={3} value={state.positions[3]} takeTurn={takeTurn} />
-            <Square position={4} value={state.positions[4]} takeTurn={takeTurn} />
-            <Square position={5} value={state.positions[5]} takeTurn={takeTurn} />
-            <Square position={6} value={state.positions[6]} takeTurn={takeTurn} />
-            <Square position={7} value={state.positions[7]} takeTurn={takeTurn} />
-            <Square position={8} value={state.positions[8]} takeTurn={takeTurn} />
-            
+        <div>
+            <div className="grid">
+                <Square position={0} value={state.positions[0]} takeTurn={takeTurn}/>
+                <Square position={1} value={state.positions[1]} takeTurn={takeTurn} />
+                <Square position={2} value={state.positions[2]} takeTurn={takeTurn} />
+                <Square position={3} value={state.positions[3]} takeTurn={takeTurn} />
+                <Square position={4} value={state.positions[4]} takeTurn={takeTurn} />
+                <Square position={5} value={state.positions[5]} takeTurn={takeTurn} />
+                <Square position={6} value={state.positions[6]} takeTurn={takeTurn} />
+                <Square position={7} value={state.positions[7]} takeTurn={takeTurn} />
+                <Square position={8} value={state.positions[8]} takeTurn={takeTurn} /> 
+            </div>
+            {winner && <Result winner={winner}/>}
         </div>
-    )
+    );
 }
 
 export default Tictactoe
