@@ -66,7 +66,7 @@ function Tictactoe() {
         if(p[2] == CROSS && p[4] == CROSS && p[6] == CROSS) return CROSS;
         
         // a tie
-        if(p.every(position => position != EMPTY)) return "It is a tie!";
+        if(p.every(position => position != 'EMPTY')) return "It is a tie!";
     }   
 
     const winner = detectWinner(state.positions);
