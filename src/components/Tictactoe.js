@@ -15,7 +15,7 @@ function Tictactoe() {
             EMPTY,EMPTY,EMPTY
         ]
         // winner: EMPTY
-    })
+    });
     
     function takeTurn(position){
         const positions = [...state.positions];
@@ -25,6 +25,17 @@ function Tictactoe() {
             player: state.player == CIRCLE ? CROSS : CIRCLE,
             positions
             // winner: detectWinner(positions)
+        });
+    }
+
+    function reset(){
+        setState({
+            player: CIRCLE,
+            positions: [ 
+                EMPTY,EMPTY,EMPTY,
+                EMPTY,EMPTY,EMPTY,
+                EMPTY,EMPTY,EMPTY
+            ]
         });
     }
 
@@ -73,7 +84,7 @@ function Tictactoe() {
                 <Square position={7} value={state.positions[7]} takeTurn={takeTurn} />
                 <Square position={8} value={state.positions[8]} takeTurn={takeTurn} /> 
             </div>
-            {winner && <Result winner={winner}/>}
+            {winner && <Result winner={winner} reset={reset} />}
         </div>
     );
 }
