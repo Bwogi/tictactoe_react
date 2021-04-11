@@ -6,7 +6,7 @@ This is a repository showing a code for an reactjs tic-tac-toe application
 
 The [production_build](https://www.ereports.net/tictactoe) can be played and enjoyed in the browser
 
-## Resources used in the course
+## Resources used
 
 * [Visual Studio Code](https://code.visualstudio.com) is an open source editor with lots of excellent extensions we're using in this course.
 * [Viewing the CSS of an element using the Inspector tool](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/css/reference#choose-an-element)
