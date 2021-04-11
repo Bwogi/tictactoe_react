@@ -1,6 +1,8 @@
 import React from 'react'
+import Footer from './Footer';
 import Result from './Result';
 import Square from './Square'
+// import Instructions from './instructions'
 
 const EMPTY = 'EMPTY';
 const CIRCLE = 'CIRCLE';
@@ -85,6 +87,8 @@ function Tictactoe() {
                 <Square position={8} value={state.positions[8]} takeTurn={takeTurn} /> 
             </div>
             {winner && <Result winner={winner} reset={reset} />}
+            <Footer /> 
+
         </div>
     );
 }

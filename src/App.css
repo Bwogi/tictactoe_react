@@ -52,11 +52,37 @@ svg {
     justify-content: center;
     font-size: 3em;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
 }
 
 button {
     padding: 5px;
     font-size: 0.5em;
+}
+
+.footer {
+    font-size: 0.8em;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.inst {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#smaller {
+    font-size: 0.8em;
+    color: darkgray;
 }
